@@ -29,3 +29,47 @@ Variables assigned using `const` cannot be replaced later in code.
 
 **? js local vs. global variables?**
 **? for/in vs. for/of**
+
+_(end of lecture 1)_
+
+---
+
+A javascript object is a collection of named values which are referred to as properties. In this language almost everything is an object. Object is kinda similar to arrya, but in obj you define the keys yourself. To create an object we need to use `{}` curly braces:
+
+```js
+<scrpit>
+    emp={
+        id: 12,
+        name: "haroon azizi"
+        salary: 4000000230,
+        onSite: true
+    }
+    document.write(emp.id+""+emp.name""+emp.salary)
+</script>
+```
+
+You can create arrays of objects too. Meaning that you can have objects inside arrays.
+
+```js
+var objs = [
+  { id: 12, name: "saghar" },
+  { id: 23, name: "zulfeqar" },
+];
+```
+
+##### Browser Object Model (BOM):
+
+Is used to interact with the browser. The default object of the browser is the window, meaning that you can call it using funcitons of window. Most important and most used ones are `Alert()` and `confirm()`.
+
+##### This 'History' Object:
+
+It contains the browser session history, a list of all the visited pages in the current frame or window.
+
+```js
+history.back();
+history.forward();
+window.history.go(-2); // goes back two pages
+window.history.go(1); // goes forward one page
+```
+
+_(end of lecture 2)_
